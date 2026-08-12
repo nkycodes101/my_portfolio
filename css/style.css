@@ -774,3 +774,211 @@ nav ul li a:hover {
         text-align: center;
     }
 }
+/* ==========================================
+   RESPONSIVE STYLES
+   Add below your existing stylesheet only.
+   ========================================== */
+
+
+/* ==========================
+   Tablet Devices (992px and below)
+========================== */
+@media screen and (max-width: 992px) {
+
+    section {
+        padding: 70px 8%;
+    }
+
+    /* Navigation */
+    nav {
+        padding: 15px 8%;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Hero */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .hero-image img {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Responsive Cards */
+    .projects-container,
+    .skills-container,
+    .education-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .experience-item,
+    .contact-info {
+        width: 100%;
+    }
+}
+
+
+/* ==========================
+   Mobile Devices (768px and below)
+========================== */
+@media screen and (max-width: 768px) {
+
+    section {
+        padding: 60px 6%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Responsive Navigation */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 12px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        min-height: auto;
+        gap: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    /* Responsive Cards */
+    .projects-container,
+    .skills-container,
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card,
+    .skill-card,
+    .education-card,
+    .experience-item,
+    .contact-info {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+
+/* ==========================
+   Small Mobile Devices (480px and below)
+========================== */
+@media screen and (max-width: 480px) {
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .hero-image img {
+        max-width: 220px;
+    }
+
+    .project-card,
+    .skill-card,
+    .education-card,
+    .experience-item,
+    .contact-info {
+        padding: 20px;
+    }
+
+    .btn,
+    button {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
